@@ -9,25 +9,26 @@
     <title>Registration Form</title>
    
     
-
-    <form id="registrationForm">
+<div class="container">
+    <form action = "" id="registrationForm">
        
-        <h2>Login Form</h2>
+        <h2>User Login</h2>
          
-        <label for="userName">Name:</label>
-        <input type="text" id="userName" name="userName" placeholder="username"> 
+        <label for="userName">Name</label>
+        <input type="text" id="userName" name="userName" placeholder="Username">
         <div id="userNameError" style="color: red; display: none;">Please enter your name.</div>
        
-        <label for="email">Email:</label>
-       
-        <input type="email" id="email" placeholder="email">
-        <div id="emailError" style="color: red; display: none;">Please enter a valid email.</div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password">
+        <div id="passwordError" style="color: red; display: none;">Please enter a valid password.</div>
         
        <div class="check">
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+        <input type="checkbox" checked="checked" name="remember" > Remember me
         </div>
 
-        <button type="button" onclick="validateForm()">Login</button>
+        <button type="button" onclick="validateForm(event)">Login</button> 
     </form>
+</div>
+  
 </body>
 </html>

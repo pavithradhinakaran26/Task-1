@@ -6,21 +6,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+   
 }
-
-
 form {
-    background-color:white;
-    padding: 20px;
-    border-radius: 8px;
+    background-color:whitesmoke;
+    padding: 50px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    box-shadow: rgba(225,225,225,0.1)0px 1px 1px 0px inset, rgba(50,50,93,0.25)0px 50px 100px -20px,rgba(0, 0, 0, 0.3)0px 30px 60px -30px;
 }
 
 h2 {
     text-align: center;
     color:black;
     font-family: cursive;
+    margin-top: -10px;
 }
 
 
@@ -33,7 +34,7 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
+input[type="password"],
 input[type="number"] {
     width: 100%;
     padding: 8px;
@@ -44,23 +45,30 @@ input[type="number"] {
 }
 
 
-button[type="button"] {
+
+button{
     width: 100%;
     padding: 10px;
-    background-color:rebeccapurple;
+    background-color:lightseagreen;
     color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-family:cursive;
+  }
+  button:hover{
+    color: white;
+    background-color: #404c59;
+    border: white 2.2px solid;
+    height: 40px;
+    /* width: 105px; */
+    cursor: pointer;
+  }
+.rem{
+    margin-top: 20px;
 }
-
-    button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-
 .error {
     color:red;
     font-size: 14px;
@@ -69,7 +77,5 @@ button[type="button"] {
     display: none;
 }
 .check{
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family:cursive;
 }
-
-
