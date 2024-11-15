@@ -7,28 +7,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Registration Form</title>
-   
+</head>
     
 <div class="container">
     <form action = "" id="registrationForm">
-       
-        <h2>User Login</h2>
+       <h2>User Login</h2>
          
-        <label for="userName">Name</label>
-        <input type="text" id="userName" name="userName" placeholder="Username">
-        <div id="userNameError" style="color: red; display: none;">Please enter your name.</div>
+         <label for="userName">Name</label>
+         <input type="text" id="userName" name="userName" placeholder="Username"> 
+         <div id="userNameError" style="color: red; display: none;">Please enter your name.</div>
+       
        
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="password">
         <div id="passwordError" style="color: red; display: none;">Please enter a valid password.</div>
-        
-       <div class="check">
-        <input type="checkbox" checked="checked" name="remember" > Remember me
-        </div>
 
-        <button type="button" onclick="validateForm(event)">Login</button> 
+        <button type="button" onclick="validateForm(event)">Login</button>
+
     </form>
+    <div id="otpModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeOtpModal()">&times;</span>
+        <h2>OTP Verification</h2>
+        <p>We've sent an OTP to your registered phone number. Please enter it below:</p>
+        <div>
+            <span id="otpPrefix"> </span>
+            <input type="text" id="otpInput" maxlength="5" required>
+        </div>
+        <div class="timer d-flex">
+        <p id="timer">01:00</p>
+    </div>
+        <button   class="otp" id="resendOtp" onclick="sendOtp()">login</button>
+      
+    </div>
 </div>
-  
+</div>
+       
 </body>
-</html>
+</html>   
+
+
+
+
+
+
+
+
+
+
+

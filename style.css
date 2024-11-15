@@ -79,3 +79,10 @@ button{
 .check{
  font-family:cursive;
 }
+.otp{
+    color: #555555;
+    background-color: #f0f0f0;
+}
+#otpModal{
+    display: none;
+}
