@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
    
-}
+} */
 form {
     background-color:whitesmoke;
     padding: 50px;
@@ -85,4 +85,26 @@ button{
 }
 #otpModal{
     display: none;
+}
+/* .vendor-page{
+    display: flex;
+} */
+/* 
+.vendor{
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: 60%;
+} */
+
+/* .box{
+    text-align: center;
+}
+.container-fluid{
+    display: inline-block;
+} */
+.form-container1{
+    width: 400px;
 }
