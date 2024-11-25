@@ -89,18 +89,41 @@ function displayTable(users) {
         const row = `<tr>
        
         <td>${index + 1}</td> 
-            <th>${user.vendorName}</th>
-            <th>${user.vendorCode}</th>
-            <th>${user.vendorType}</th>
-            <th>${user.address}</th>
-            <th>${user.country}</th>
-            <th>${user.status}</th>
+            <td>${user.vendorName}</td>
+            <td>${user.vendorCode}</td>
+            <td>${user.vendorType}</td>
+            <td>${user.address}</td>
+            <td>${user.country}</td>
+            <td>${user.status}</td>
+            
+            <td>
+             <i class="fa-solid fa-pen-to-square" data-id="${user.id}"></i>
+             <td>
+             
 
         </tr>`;
         tableBody.innerHTML += row;
     });
 }
+    
+
+
+
+
 
 fetchUserData();
 vendor();
+
+const editIcons = tableBody.querySelectorAll('.bxs-edit-alt');
+    editIcons.forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            console.log(event)
+            const userId = event.target.getAttribute('data-id');
+            console.log(userId)
+            window.location.href = `table.html?id=${userId}`;
+            // editUser(userId);
+        });
+    });
+
+
      

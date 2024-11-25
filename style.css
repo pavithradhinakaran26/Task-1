@@ -1,4 +1,4 @@
-/* body {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
    
-} */
+}
 form {
     background-color:whitesmoke;
     padding: 50px;
@@ -80,12 +80,53 @@ button{
  font-family:cursive;
 }
 .otp{
-    color: #555555;
-    background-color: #f0f0f0;
+    /* color: #555555; */
+    padding-left: 7rem;
+    /* background-color: #f0f0f0; */
 }
 #otpModal{
     display: none;
+    width: 500px;
+    margin-left: 34%;
+  
+
 }
+.creative{
+    
+     margin:20px 10px 25px 10px;
+     width: 600px;
+     text-align: center;
+     
+     margin-left: 200px;
+     background-color:gray;
+     
+}
+.red{
+   margin-right: 95%;
+   
+}
+.type{
+    text-align: left;
+}
+.bold{
+    margin-right: 20px;
+    text-align: end;
+
+}
+
+
+
+
+
+
+
+/* .otp{
+    text-align: center;
+} */
+/* .modal{
+    display: inline-block;
+
+}  */
 /* .vendor-page{
     display: flex;
 } */
@@ -102,9 +143,12 @@ button{
 /* .box{
     text-align: center;
 }
-.container-fluid{
-    display: inline-block;
-} */
 .form-container1{
     width: 400px;
 }
+
+
+
+
+
+
