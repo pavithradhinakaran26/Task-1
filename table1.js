@@ -112,7 +112,7 @@ async function creativeButton(event) {
     let zipError = document.getElementById('zipError');
     let nameError = document.getElementById('nameError');
     let emailError = document.getElementById('emailError');
-    let phonenoError = document.getElementById('phonenoError');
+    let phonenoError = document.getElementById('phonenoError');  
    
     
     let valid = true;
@@ -338,10 +338,12 @@ async function creativeButton(event) {
         //     console.error("Error occurred:", error);
         //     alert("An error occurred while creating the vendor.");
         // }
-      }
+
+    
 
 
 
+ }
 }
  
 
@@ -351,6 +353,8 @@ async function creativeButton(event) {
 
 
 async function populateCurrencies() {
+
+
 try {
   const jwtToken = localStorage.getItem('jwtToken'); 
   
@@ -365,6 +369,8 @@ try {
           'Content-Type': 'application/json',   
       },
   });
+
+
 
   if (!response.ok) {
       throw new Error('Failed to fetch currencies');
@@ -486,6 +492,10 @@ filteredCities.forEach(city => {
 });
 }
 
+
+
+
+
 populatecountry();
 countrycity();
 
@@ -534,7 +544,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-         
 
 
 
@@ -542,8 +551,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+         // async function creativeButton(event) {
+//   event.preventDefault(); 
 
 
+// }
 
 
 
