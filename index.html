@@ -24,15 +24,15 @@
          </div>
          <div id="passwordError" style="color: red; display: none;">Please enter a valid password.</div>
         
-        <button type="button" onclick="validateForm(event)">Login</button>
+        <button type="button"  class="btn" onclick="validateForm(event)">Login</button>
 
     </form>
     </div>
     <div id="otpModal" class="modal">
     <!-- <div class="modal-content"> -->
         <span class="close" onclick="closeOtpModal()">&times;</span>
-        <h2>OTP Verification</h2> 
-        <p>We've sent an OTP to your registered phone number. Please enter it below:</p>
+        <h2 class="Verification">OTP Verification</h2> 
+        <p class="regi">We've sent an OTP to your registered phone number. Please enter it below:</p>
         <div>
             <span id="otpPrefix"> </span>
             <input type="text" id="otpInput" maxlength="5" required>
@@ -40,7 +40,7 @@
         <div class="timer d-flex">
         <p id="timer">01:00</p>
     </div>
-        <button   class="otp" id="resendOtp" onclick="sendOtp()">login</button>
+        <button  class="otp" id="resendOtp" onclick="sendOtp()">submit</button>
                 
     </div> 
 </div>

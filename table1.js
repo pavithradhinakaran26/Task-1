@@ -30,7 +30,7 @@ async function editUser(id) {
     const user = await response.json();
     const data = user.data;
     await fetchCurrencies();
-    await countryGet();
+    await countryIdGet();
     parentId = data.id;
     document.getElementById("vendorName").value = data.vendorName;
     document.getElementById("vendorCode").value = data.vendorCode;
@@ -113,7 +113,7 @@ async function creativeButton(event) {
     let nameError = document.getElementById('nameError');
     let emailError = document.getElementById('emailError');
     let phonenoError = document.getElementById('phonenoError');  
-   
+   console.log(city)
     
     let valid = true;
 
@@ -235,13 +235,13 @@ async function creativeButton(event) {
             address2: add2,
             country: country,
             postalCode: zip,
-            bankAcctName: bankAcctName,
+            bankAcctName: bankAccountName,
             bankName: bankName,
             bankBranchName: bankBranchName,
-            bankAccountNum: bankAccountNum,
-            bankSwiftCode: bankSwiftCode,
+            bankAccountNum: bankAccountName,
+            bankSwiftCode: switftcode,
             cityId: city,
-            cityName: "",
+            cityName: city,
             notes: "",
             createdBy: "adf8906a-cf9a-490f-a233-4df16fc86c58",
             documentList: [],
@@ -251,7 +251,7 @@ async function creativeButton(event) {
                 email: email,
                 mobileNo: phoneno,
                 isDefault: chooseDefault,
-                id: rowId ? rowId : "",
+                id: "",
               },
             ],
           };
@@ -286,7 +286,7 @@ async function creativeButton(event) {
                 email: email,
                 mobileNo: phoneno,
                 isDefault: isdefault,
-                // id: rowId ? rowId : "",
+                 id: "",
               },
             ],
             vendorName: vendorName,
@@ -310,6 +310,8 @@ async function creativeButton(event) {
             createdBy: "adf8906a-cf9a-490f-a233-4df16fc86c58",
             documentList: [],
           };
+
+
           const response = await fetch(
             "https://hastin-container.com/staging/api/vendor/create",
             {
@@ -388,7 +390,7 @@ try {
 
   currency.forEach(currencys => {
       const option = document.createElement('option');
-      option.value = currencys.code; 
+      option.value = currencys.id; 
       option.textContent = currencys.name;
       dropdown.appendChild(option); 
   });
@@ -433,7 +435,7 @@ try {
 
     countries.forEach(country => {
         const option = document.createElement('option');
-        option.value = country.name; 
+        option.value = country.id; 
         option.textContent = country.name; 
         dropdown.appendChild(option);
     });
@@ -475,18 +477,18 @@ try {
 
 function filterCities() {
 const countryDropdown = document.getElementById('choose');
-const selectedCountry = countryDropdown.value; 
+const selectedCountry = countryDropdown.value;
 const cityDropdown = document.getElementById('city');
 
 cityDropdown.innerHTML = '<option value="" disabled selected>Select a city</option>'; 
 
 if (!selectedCountry) return;
 
-const filteredCities = citiesData.filter(city => city.countryName === selectedCountry);
+const filteredCities = citiesData.filter(city => city.countryId === selectedCountry);
 
 filteredCities.forEach(city => {
     const option = document.createElement('option');
-    option.value = city.code;
+    option.value = city.id;
     option.textContent = city.name;
     cityDropdown.appendChild(option);
 });
@@ -551,11 +553,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-         // async function creativeButton(event) {
-//   event.preventDefault(); 
 
-
-// }
 
 
 

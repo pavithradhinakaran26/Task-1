@@ -63,11 +63,11 @@ async function vendor() {
                 'Authorization': `BslogiKey ${jwtToken}`,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(payload)  
+            body: JSON.stringify(payload)
         });
 
         if (response.ok) {
-            const data = await response.json();
+            const data = await response.json(); 
             const users = data.data.tableData; 
 
             displayTable(users);
@@ -104,6 +104,19 @@ function displayTable(users) {
         </tr>`;
         tableBody.innerHTML += row;
     });
+
+    const editIcons = tableBody.querySelectorAll('.fa-pen-to-square');
+    editIcons.forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            console.log(event)
+            const userId = event.target.getAttribute('data-id');
+            console.log(userId)
+            window.location.href = `table.html?id=${userId}`; 
+            editUser(userId); 
+        }); 
+    });
+
+
 }
     
 
@@ -114,16 +127,11 @@ function displayTable(users) {
 fetchUserData();
 vendor();
 
-const editIcons = tableBody.querySelectorAll('.bxs-edit-alt');
-    editIcons.forEach(icon => {
-        icon.addEventListener('click', (event) => {
-            console.log(event)
-            const userId = event.target.getAttribute('data-id');
-            console.log(userId)
-            window.location.href = `table.html?id=${userId}`;
-            // editUser(userId);
-        });
-    });
+
+
+
+
+
 
 
      
