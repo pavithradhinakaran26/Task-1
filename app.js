@@ -137,7 +137,13 @@ function startTimer() {
 
 async function sendOtp(data) {
     try {
-        
+        const enteredOtp = document.getElementById('otpInput').value;
+        const storedOtp = localStorage.getItem('accessCode');
+  
+        if (enteredOtp !== storedOtp) {
+            alert("Invalid OTP. Please enter the correct OTP.");
+            return; 
+        }
         const jwtToken = localStorage.getItem('jwtToken'); 
         
         if (!jwtToken) {

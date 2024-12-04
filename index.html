@@ -9,7 +9,7 @@
     <title>Registration Form</title>
 </head>
     <body >
-<div class="container">
+<div class="container1">
     <form action = "" id="registrationForm">
        <h2>User Login</h2>
          
@@ -19,8 +19,9 @@
        
          <label for="password">Password</label>
          <div class="password-container">
+            <i class="fas fa-eye" id="togglePassword" onclick="togglePasswordVisibility()"></i>
+
              <input type="password" id="password" placeholder="Password">
-             <i class="fas fa-eye" id="togglePassword" onclick="togglePasswordVisibility()"></i>
          </div>
          <div id="passwordError" style="color: red; display: none;">Please enter a valid password.</div>
         
@@ -35,7 +36,7 @@
         <p class="regi">We've sent an OTP to your registered phone number. Please enter it below:</p>
         <div>
             <span id="otpPrefix"> </span>
-            <input type="text" id="otpInput" maxlength="5" required>
+            <input type="text" id="otpInput" maxlength="0" required>
         </div>
         <div class="timer d-flex">
         <p id="timer">01:00</p>

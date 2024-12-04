@@ -33,7 +33,7 @@ async function fetchUserData() {
 
     } catch (error) {
         console.error("Error:", error);
-        alert("There was an error fetching the user profile.");
+        // alert("There was an error fetching the user profile.");
     }
 }
 
@@ -78,11 +78,11 @@ async function vendor() {
 
     } catch (error) {
         console.error("Error:", error);
-        alert("There was an error fetching the user profile.");
+        // alert("There was an error fetching the user profile.");
     }
 }
 function displayTable(users) {
-    const tableBody = document.getElementById('vendor');
+    const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = ''; 
 
     users.forEach((user,index) => {
@@ -111,21 +111,22 @@ function displayTable(users) {
             console.log(event)
             const userId = event.target.getAttribute('data-id');
             console.log(userId)
-            window.location.href = `table.html?id=${userId}`; 
-            editUser(userId); 
+            window.location.href = `table1.html?id=${userId}`; 
+            editUser(userId);
         }); 
     });
 
 
 }
     
-
-
-
-
-
 fetchUserData();
 vendor();
+
+function logout(){
+    localStorage.removeItem("jwtToken");
+    alert("logout suuccessfully");
+    window.location.href = "index.html";
+}
 
 
 
