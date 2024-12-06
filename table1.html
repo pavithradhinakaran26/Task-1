@@ -37,13 +37,13 @@
   </div> 
     </nav>
    <div class="path  mt-5 d-flex mb-4  " style="justify-content: space-between;" >
-    <h2 class=" dor mt-5" style="margin-right:20px ;">Vendor Details</h2>
-<button type="submit" class="save mt-4 "style="margin-left:90px" id="save" onclick="saveButton(event)">SAVE</button>
+    <h2 class=" dor mt-4">Vendor Details</h2>
+<button type="submit" class="save mt-5 " id="save" onclick="saveButton(event)">SAVE</button>
    </div>
     <div class="container  d-lg-flex d-md-block" style="gap: 20px; ">
         <form id="vendor" class="form-container1 shadow">
             <div class="forms">
-            <h4 style="margin-left: 10%; margin-top: 3%;">Basic details</h4>
+            <h4 style="margin-right: 20%; margin-top: 3%;">Basic details</h4>
         <div class="box1">
       <div class="form-floating mb-3">
         <input type="text" class="form-control border-2 rounded-0 border-start-0 border-end-0 border-top-0" style="box-shadow: none;" id="vendorName" placeholder="vendorName" name="vendorName" autocomplete="off">
@@ -199,13 +199,13 @@
                     <th>Email</th>
                     <th>Phone No</th>
                     <th>Is Default</th>
-                    <th>Action</th>
+                    <th>Action</th> 
                    
                 </tr>
             </thead>
            <tbody id="table2">
             <tr>
-                <td class="serialno" style="text-align: center;" name="rowId" id="rowId">1</td>
+                <td class="serialno" name="rowId" id="rowId">1</td>
                 <td>
                     <div class="form-floating ">
                         <input type="text" class="form-control border-1 rounded-0 border-start-0 border-end-0 border-top-0" autocomplete="off" style="box-shadow: none;" id="Name1" placeholder=" Name" name="Name">
@@ -238,15 +238,15 @@
                     <div id="defaultError1" class="text-danger"></div>
                 </td>
                 <td>
-                    <div class="mt-3">
-                   <i class='bx bx-check text-success fs-2 ' id="checkButton" onclick="checkButton(1)"></i>
-                    <i class='bx bxs-trash text-danger fs-3 '></i></div></td>
+                    <div class="mt-2">
+                   <i class='bx bx-check text-success ' id="checkButton" onclick="checkButton(1)"></i>
+                    <i class='bx bxs-trash text-danger  '></i></div></td>
               </tr>
            </tbody>
            
         </table>
         
-        <button class="btn btn-primary mt-1  mb-5 addbutton" style="width: 100px;" id="addRowBtn">Add Row</button>
+        <button class="btn btn-success mt-1  mb-5 addbutton" style="width: 100px;" id="addRowBtn">Add Row</button>
         </div>
         </div>
 
