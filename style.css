@@ -40,23 +40,32 @@ form {
     box-shadow: rgba(225,225,225,0.1)0px 1px 1px 0px inset, rgba(50,50,93,0.25)0px 50px 100px -20px,rgba(0, 0, 0, 0.3)0px 30px 60px -30px;
 }
 .dor{
-    margin-left: 9rem;
-}
-.save{
-    margin-right: 10rem;
-    background-color:gray;
-    border: 1px solid white  ;
-    border-radius: 7px;
-    padding:  15px;
-    height: 50px;
-    width:85px ;
-    color: white;
-  
+    margin-left: 8rem;
+    margin-top: 30px;
 
 }
+.save{
+    margin-right: 15rem;
+    background-color:gray;
+    border: 1px solid white  ;
+    border-radius: 12px;
+    padding:  15px;
+    height: 50px;
+    width:100px ;
+    color: white;
+    
+
+}
+.save:hover {
+    background-color: skyblue;
+    font-size: 15px;
+  }
 .addbutton{
     margin-left: 6rem;
 }
+
+
+
 
 h2 {
     text-align: center;
@@ -102,21 +111,24 @@ input[type="number"] {
 
   }
   .btn1{
-    width:100px;
+    width:95px;
     padding: 10px;
     background-color:lightseagreen;
     color: #ffffff;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px  ;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 17px;
+    /* font-size: 16px; */
+    margin-top: 30px;
     font-family:cursive;
-    padding-left: 7px;
-   
-   
+    margin-right: 100px;
     
+   }
+  .btn1:hover {
+    background-color: green;
+    font-size: 15px;
   }
+
   .serialno{
     font-size: 19px;
     
@@ -168,28 +180,30 @@ input[type="number"] {
     position: fixed;
     top: 0;
     left: 20px;
-    width: 100%; 
+    width: 300%; 
     height: 100%;
 }
   .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
-    max-width: 400px; 
-    text-align: center;
-    margin-left: 520px;
+    /* width: 40%; */
+    max-width: 400px;
+   margin-left: 460px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    /* text-align: center; */
   }
 
+
   .close {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: hsl(340, 97%, 45%);
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 52px;
+    margin-left: 380px;
+
   }
 .Verification{
     font-size:20px ;
@@ -239,12 +253,22 @@ input[type="number"] {
     width: 100px;
     height: 40px;
     border-radius: 7px;
+  
 }
+.otp:hover {
+    background-color: skyblue;
+    font-size: 18px;
+  }
+  #vendar{
+   margin-left: 100px;
+  }
+
 /* .btn1{
     background-color: aqua;
     margin-left:500px;
 
 } */
+
  
 
 
@@ -252,12 +276,21 @@ input[type="number"] {
     #otpModal{
         margin-left: -379px;
     }
+    /* #registrationForm{
+        margin-right: -90px;
+    } */
+
+}
+@media only screen and (min-width:375px){
+    #otpModal{
+        margin-right: -379px;
+    }
 
 }
 @media only screen and (min-width:424px) and (max-width:766px){
-    #registrationForm{
+    /* #registrationForm{
         margin-left: 10px;
-    }
+    } */
     #otpModal{
         margin-left: 1px;
     }
@@ -281,16 +314,25 @@ input[type="number"] {
     }
 
 }
-
-
-                      @media only screen and (min-width:425px) {
+.fa-solid{
+    font-size: 20px;
+    
+}
+.fa-solid:hover {
    
+    font-size: 18px;
+    color: palevioletred;
+}
+
+/* 
+                      @media only screen and (min-width:425px) {
+/*    
                         #registrationForm{
                            margin-right:-200px !important ;
                         }
-                        } 
+                        }  
 
-                         @media only screen and (min-width:375px) {
+                         @media only screen and (min-width:375px) {  
    
                             #registrationForm{
                                margin-right:160px !important ;
@@ -323,8 +365,8 @@ input[type="number"] {
 margin-right:-300px !important ;
                                               
 }  
-}  
-@media only screen and (min-width:320px) and (max-width:423px){
+/* }  
+ @media only screen and (min-width:320px) and (max-width:423px){
     .save{
         margin-left: 70px;
     }
@@ -336,7 +378,7 @@ margin-right:-300px !important ;
     }
 
 }
-@media only screen and (min-width:425px) {
+ @media only screen and (min-width:425px) {
     .btn1{
         margin-left: 70px;
     }
@@ -353,7 +395,7 @@ margin-right:-300px !important ;
         margin-left: 400px;
     }
 
-}
+}  
 
 
                

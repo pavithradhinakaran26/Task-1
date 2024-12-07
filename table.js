@@ -97,7 +97,7 @@ function displayTable(users) {
             <td>${user.status}</td>
             
             <td>
-             <i class="fa-solid fa-pen-to-square" data-id="${user.id}"></i>
+             <i class="fa-solid fa-pen-to-square " data-id="${user.id}"></i>
              <td>
              
 

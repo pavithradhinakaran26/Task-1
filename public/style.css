@@ -44,10 +44,15 @@ form {
 }
 .save{
     margin-right: 10rem;
-    background-color:lightseagreen;
-    border: none;
-    border-radius: 5px;
-    padding: 0 15px;
+    background-color:gray;
+    border: 1px solid white  ;
+    border-radius: 7px;
+    padding:  15px;
+    height: 50px;
+    width:85px ;
+    color: white;
+  
+
 }
 .addbutton{
     margin-left: 6rem;
@@ -94,6 +99,27 @@ input[type="number"] {
     margin-top: 17px;
     font-family:cursive;
     padding-left: 10px;
+
+  }
+  .btn1{
+    width:100px;
+    padding: 10px;
+    background-color:lightseagreen;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 17px;
+    font-family:cursive;
+    padding-left: 7px;
+   
+   
+    
+  }
+  .serialno{
+    font-size: 19px;
+    
   }
   .btn:hover{
     color: white;
@@ -121,18 +147,51 @@ input[type="number"] {
     font-size: 15px;
    font-family: cursive;
 }
-#otpModal{
+/* #otpModal{
     display: none;
     width: 500px;
-   
+    margin-top: 67px;
     border: 3px solid black;
     padding: 5px 20px 20px 15px;
     margin-left: 480px ;
     
+} */
+
+
+.modal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    width: 300%; 
+    height: 100%;
 }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* width: 40%; */
+    max-width: 400px;
+   margin-left: 460px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    /* text-align: center; */
+  }
 
+  .close {
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(340, 97%, 45%);
+    cursor: pointer;
+    position: absolute;
+    top: 52px;
+   margin-left: 380px;
 
-
+  }
 .Verification{
     font-size:20px ;
     font-family:fangsong ;
@@ -154,6 +213,15 @@ input[type="number"] {
    
    
 }
+.text-danger{
+    margin-left:10px;
+    font-size: 28px;
+
+}
+.text-success{
+    margin-left: 20px;
+    font-size: 28px;
+}
 .type{
     text-align: left;
 }
@@ -166,59 +234,40 @@ input[type="number"] {
     margin-right:20px ;
     width: 65px;
     font-size: 16px;
+    background-color:rgb(225, 70, 70);
+    color: #ffffff;
+    padding:10px ;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
 }
-.btn1{
+/* .btn1{
     background-color: aqua;
     margin-left:500px;
 
-}
-  /* @media only screen and (min-width:425px) {
-   
-    .btn1{
-        margin-right: 200px !important;
-    }
-    } 
-   
-         @media only screen and (min-width:320px) {
-   
-             .btn1{
-                margin-right: 300px !important;
-            }
-            }  
-             */
-   
-      /* @media only screen and (min-width:1024px) {
-   
-     .modal{
-           margin-right: -800px !important;
-          margin-left: 200px !important;
-           
-        }
-        }  */
-/* @media only screen and (min-width:768px) {
+} */
+ 
 
-.modal{
-    margin-right: -200px !important; 
-}
-
-}  */
-@media only screen and (min-width:1023px) and (max-width:1439px){
-    #otpModal{
-        margin-left: 240px;
-    }
-
-}
 
 @media only screen and (min-width:767px) and (max-width:1022px){
     #otpModal{
-        margin-left: 120px;
+        margin-left: -379px;
+    }
+    /* #registrationForm{
+        margin-right: -90px;
+    } */
+
+}
+@media only screen and (min-width:375px){
+    #otpModal{
+        margin-right: -379px;
     }
 
 }
 @media only screen and (min-width:424px) and (max-width:766px){
-    #registrationForm{
+    /* #registrationForm{
         margin-left: 10px;
-    }
+    } */
     #otpModal{
         margin-left: 1px;
     }
@@ -243,55 +292,15 @@ input[type="number"] {
 
 }
 
-
-
-              /* @media only screen and (min-width:320px) {
-   
-                .modal{
-                    margin-left: 14px !important; 
-                   
-                   
-                }
-                }  */
-            /* @media only screen and (min-width:425px) {
-    
-            .modal{
-               margin-left:500px !important ;
-               
-                
-            } 
-            }     */
-            /* @media only screen and (min-width:375px) {
-   
-                .modal{
-                   margin-left: 30px !important;
-                    
-                   
-                }
-                }  */
- 
-              /* @media only screen and (min-width:425px) {
-   
-                .modal{
-                    margin-left:-50px !important ;
-                }
-                }    */
-
-                  /* @media only screen and (min-width:320px) {
-   
-                    .container1{
-                         margin-right:-300px !important ;  
-                    }
-                    }  */
-
+/* 
                       @media only screen and (min-width:425px) {
-   
+/*    
                         #registrationForm{
                            margin-right:-200px !important ;
                         }
-                        } 
+                        }  
 
-                         @media only screen and (min-width:375px) {
+                         @media only screen and (min-width:375px) { 
    
                             #registrationForm{
                                margin-right:160px !important ;
@@ -324,7 +333,39 @@ input[type="number"] {
 margin-right:-300px !important ;
                                               
 }  
-}  
+}   */
+/* @media only screen and (min-width:320px) and (max-width:423px){
+    .save{
+        margin-left: 70px;
+    }
+
+}
+@media only screen and (min-width:425px){
+    .save{
+        margin-left: 70px;
+    }
+
+}
+@media only screen and (min-width:425px) {
+    .btn1{
+        margin-left: 70px;
+    }
+
+}
+@media only screen and (min-width:375px) {
+    .btn1{
+        margin-left: 400px;
+    }
+
+}
+@media only screen and (min-width:320px) {
+    .btn1{
+        margin-left: 400px;
+    }
+
+} */
+
+
                
                
 
@@ -333,39 +374,7 @@ margin-right:-300px !important ;
 
 
 
-/* .bold{
-    font-size:30px ;
-} */
 
-
-
-
-
-
-
-/* .modal{
-    display: inline-block;
-
-}  */
-/* .vendor-page{
-    display: flex;
-} */
-/* 
-.vendor{
-    background-color: whitesmoke;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
-    width: 500px;
-    margin-left: 60%;
-} */
-
-/* .box{
-    text-align: center;
-}
-.form-container1{
-    width: 400px;
-}
 
 
 
